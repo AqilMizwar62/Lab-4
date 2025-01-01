@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kucing</title>
+    <style>
+        /* General Styling */
+        h2 { text-decoration: underline; }
+        p { color: rgb(230, 135, 10); }
+        footer p { color: black; }
+
+        /* Navigation Bar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        li { margin: 0 10px; }
+        a:link, a:visited {
+            display: block;
+            font-weight: bold;
+            color: #FFFFFF;
+            background-color: #1674b3;
+            width: 150px;
+            text-align: center;
+            padding: 4px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        a:hover, a:active { background-color: #21191f; }
+
+        /* Form Styling */
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input[type="text"], form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form input[type="radio"] {
+            margin-right: 5px;
+        }
+        form input[type="submit"] {
+            background-color: #1674b3;
+            color: #fff;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #21191f;
+        }
+
+        /* Video Styling */
+        video {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <ul>
+        <li><a href="#wajah">Wajah Kucing</a></li>
+        <li><a href="#ayah">Ayah Kucing</a></li>
+        <li><a href="#ibu">Ibu Kucing</a></li>
+        <li><a href="#nenek">Nenek Kucing</a></li>
+    </ul>
+
+    <!-- Header -->
+    <header>
+        <center><h1>Lab 4</h1></center>
+    </header>
+
+    <!-- Content Section -->
+    <section id="1">
+        <h2><center>About My Cat</center></h2>
+        <article>
+            <p>
+                Aku memelihara seekor kucing jalanan. Aku memberi nama kucing itu "Muani". 
+                Muani merupakan kucing betina. Muani berwarna orange brick dan mempunyai bulu kerinting. 
+                Video di bawah ini adalah klip seekor kucing bernama Muani.
+            </p>
+        </article>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <video width="500" height="400" controls>
+            <source src="kucing.mp4" type="video/mp4">
+            No Sound.
+        </video>
+    </section>
+
+    <!-- Tell About Your Cat Form -->
+    <div>
+        <h2><center>Tell About Your Cat</center></h2>
+        <form action="">
+
+            <label for="namauser">Nama:</label>
+            <input type="text" id="namauser" name="namauser" placeholder="Nama Anda" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="my@gmail.com" required>
+
+            <label for="namakucing">Nama Kucing:</label>
+            <input type="text" id="namakucing" name="namakucing" placeholder="Nama Kucing" required>
+
+            <!-- Gender -->
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </fieldset>
+
+            <br>
+            <!-- Hobbies -->
+            <label for="hobby">Select your hobbies:</label><br>
+            <input type="checkbox" id="hobby1" name="hobby1" value="Reading">
+            <label for="hobby1">Reading</label><br>
+            <input type="checkbox" id="hobby2" name="hobby2" value="Gaming">
+            <label for="hobby2">Gaming</label><br><br>
+
+            <input type="submit" value="Hantar">
+        </form>
+    </div>
+
+    <!-- Wajah Kucing Section -->
+    <section id="wajah">
+        <h2>Wajah Kucing</h2>
+        <p>Content about the face of the cat...</p>
+    </section>
+
+    <!-- Ayah Kucing Section -->
+    <section id="ayah">
+        <h2>Ayah Kucing</h2>
+        <p>Warna Hitam</p>
+    </section>
+
+    <!-- Ibu Kucing Section -->
+    <section id="ibu">
+        <h2>Ibu Kucing</h2>
+        <p>Warna Kuning</p>
+    </section>
+
+    <!-- Nenek Kucing Section -->
+    <section id="nenek">
+        <h2>Nenek Kucing</h2>
+        <p>Warna Hijau</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Hakcipta Terpelihara.</p>
+    </footer>
+</body>
+</html>
